@@ -1,3 +1,5 @@
+#ifndef LINESENSOR_H
+#define LINESENSOR_H
 
 #define APDS9960_I2C_ADDR 0x39
 #define ALSGAIN 0b11
@@ -63,3 +65,5 @@ class LineSensor {
     }
 
 };
+
+#endif
