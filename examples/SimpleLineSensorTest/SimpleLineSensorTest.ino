@@ -14,28 +14,21 @@
 #include <LineSensor.h>
 
 
+
 LineSensor<SoftWire> line1;
 LineSensor<TwoWire> line2;
 
-
      
-void setup()
-{
-  
+void setup() {
   Serial.begin(9600);
   while (!Serial);
   line1.setup();
   line2.setup();
-
 }
 
-
-void loop()
-{
+void loop() {
     Serial.print("Prox, prox2: ");
-    Serial.print( line1.getProximity());
+    Serial.print(line1.getProximity());
     Serial.print(", ");
-    Serial.println( line2.getProximity());
+    Serial.println(line2.getProximity());
 }
-
-
