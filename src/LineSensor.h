@@ -5,10 +5,8 @@
 template<typename WireClass>
 class LineSensor {
   public:
-    LineSensor() {
-    }
     void setup() {
-Wire.begin();
+      Wire.begin();
       writeByte(0x80, 0b111);
       writeByte(0x8F, ALSGAIN);
       writeByte(0x9F, 0);
